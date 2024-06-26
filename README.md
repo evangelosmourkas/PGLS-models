@@ -72,6 +72,8 @@ pgls.res <- round(rbind(
 
 pgls.res
 ```
+<img width="344" alt="2 pgls res" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/8da373ae-7823-4b7d-ab92-fbe937196006">
+
 We continue with remaining three set of models:
 b.Shannon diversity of Clonal complexes (CC)
 c.The proportion of AMR genes present per host species, excluding genes against beta-lactam drugs
@@ -113,10 +115,15 @@ pgls.res2 <- round(rbind(
 pgls.res1
 ```
 Lineage diversity
+
+<img width="339" alt="3 pgls res1" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/ddbbd96b-093c-4bdd-86e4-3de490244726">
+
 ```
 pgls.res2
 ```
 Proportion of AMR
+
+<img width="340" alt="4 pgls res2" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/933d58f2-dfa4-4096-ad91-e311fdd6df8e">
 
 Proceed to do the conduct the part of the analysis involving the proximity to humans estimates
 AMR parameters and Proximity to urbanisation (N=38)
@@ -130,6 +137,7 @@ tt <- read.tree("/path/to/directory/tree_submit_add_branch")
 tt <- drop.tip(tt, tip="Larus_californicus")
 tt
 ```
+<img width="617" alt="5 tt" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/dc1a372e-8835-4ba8-a6c1-62f4dc7f97e2">
  
 ```
 pgd <- read.csv("/path/to/directory/prox.csv", header = T)
@@ -142,13 +150,22 @@ pg2 <- pgls(lin ~ prox, comp, lambda = "ML")
 pg3 <- pgls(plogis(prop) ~ prox, comp, lambda = "ML")
 summary(pg1)
 ```
+<img width="367" alt="6 pg1" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/9f9ac200-2c7a-4445-a956-6be2ffd09764">
+
 ```
 summary(pg2)
 ```
+
+<img width="360" alt="7 pg2" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/5eaa5d6c-b230-45ca-b272-771b601e64a5">
+
 ```
 summary(pg3)
 ```
+
+<img width="382" alt="8 pg3" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/2416ab89-9d68-4c68-ac1a-edac25ba5980">
+
 AMR parameters and proximity to humans, subset excluding genomes with n<2 (N=20)
+
 ```
 pgd0 <- pgd[pgd$number!=1,]
 comp0 <- comparative.data(tt, pgd0, species, vcv=T,vcv.dim = 3)
@@ -158,12 +175,20 @@ pg30 <- pgls(plogis(prop) ~ prox, comp0, lambda = "ML")
 summary(pg10)
 ```
 
+<img width="363" alt="9 pg10" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/c22504d2-a225-4cb5-be6d-7f9a19ffe6aa">
+
 ```
 summary(pg20)
 ```
+
+<img width="373" alt="10 pg20" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/6e25b923-21fb-42d5-a775-62b0a9af15a7">
+
 ```
 summary(pg30)
 ```
+
+<img width="375" alt="11 pg30" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/099fb0d8-85a7-403d-a026-868c7cbc4a1f">
+
 # How to cite
 Mourkas E, Valdebenito JO, Marsh H, Hitchings MD, Cooper KK, Parker CT, Székely T, Johansson H, Ellström P, Pascoe B, Waldenström J, Sheppard SK (2023) **Urbanisation spreads antimicrobial resistant enteric pathogens in wild bird microbiomes**.
 bioRxiv doi: 10.1101/2023.07.11.548564
