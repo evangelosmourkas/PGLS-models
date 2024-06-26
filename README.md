@@ -19,6 +19,7 @@ The following code has been developed in collaboration with **Jose Valdebenito**
 t <- read.tree("/path/to/directory/tree")
 plotTree(t, ftype="i")
 ```
+<img width="518" alt="1 tree" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/920cd3d8-9ffb-4cf9-b224-ff6f4f96e1a9">
 
 ## Load data
 ```
