@@ -17,13 +17,14 @@ The following code has been developed in collaboration with **Jose Valdebenito**
 ## Load tree phylogeny
 ```
 t <- read.tree("/path/to/directory/tree_submit")
+t <- drop.tip(t, tip="Larus_californicus")
 plotTree(t, ftype="i")
 ```
 <img width="518" alt="1 tree" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/920cd3d8-9ffb-4cf9-b224-ff6f4f96e1a9">
 
 ## Load data
 ```
-df <- read.csv("/path/to/directory/data.csv")
+df <- read.csv("/path/to/directory/Table S7_New ecol.csv")
 df$Weights... <- NULL
 df$Common.name <- NULL
 colnames(df) <- c("species", "number", "lin", "amr", "prop","b.mass","clutch_size", "msys", "migra", "habit", "diet", "social")
@@ -140,7 +141,7 @@ tt
 <img width="617" alt="5 tt" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/dc1a372e-8835-4ba8-a6c1-62f4dc7f97e2">
  
 ```
-pgd <- read.csv("/path/to/directory/prox.csv", header = T)
+pgd <- read.csv("/path/to/directory/Table S7_New prox.csv", header = T)
 pgd$Weights... <- NULL
 colnames(pgd)[1:8] <- c("species", "name", "country", "prox", "number", "lin", "amr", "prop")
 comp <- comparative.data(tt, pgd, species, vcv=T,vcv.dim = 3)
