@@ -1,12 +1,10 @@
 # PGLS-models
 R code of PGLS models testing AMR against life-history and ecological variables
 
-## Preprint
-The following code has been developed in collaboration with **Jose Valdebenito**. The methodology underlying the use of the scripts has been detailed in the preprint _"Urbanization spreads antimicrobial resistant enteric pathogens in wild bird microbiomes"_. Please refer to citation information at the bottom of this document.
+## Publication
+The following code has been developed in collaboration with **Jose Valdebenito**. The methodology underlying the use of the script has been detailed in the article "Proximity to humans is associated with antimicrobial-resistant enteric pathogens in wild bird microbiomes" published in Current Biology.
 
 ## Files Summary
-
-
 
 ## R Packages
 * phytools
@@ -191,5 +189,5 @@ summary(pg30)
 <img width="375" alt="11 pg30" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/099fb0d8-85a7-403d-a026-868c7cbc4a1f">
 
 # How to cite
-Mourkas E, Valdebenito JO, Marsh H, Hitchings MD, Cooper KK, Parker CT, Székely T, Johansson H, Ellström P, Pascoe B, Waldenström J, Sheppard SK (2023) **Urbanisation spreads antimicrobial resistant enteric pathogens in wild bird microbiomes**.
-bioRxiv doi: 10.1101/2023.07.11.548564
+Mourkas E, Valdebenito JO, Marsh H, Hitchings MD, Cooper KK, Parker CT, Székely T, Johansson H, Ellström P, Pascoe B, Waldenström J, Sheppard SK (2023) **Proximity to humans is associated with antimicrobial resistant enteric pathogens in wild bird microbiomes**.
+Current Biology. doi: https://doi.org/10.1016/j.cub.2024.07.059
