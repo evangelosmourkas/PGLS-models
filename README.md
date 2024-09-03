@@ -189,5 +189,5 @@ summary(pg30)
 <img width="375" alt="11 pg30" src="https://github.com/evangelosmourkas/PGLS-models/assets/73548463/099fb0d8-85a7-403d-a026-868c7cbc4a1f">
 
 # How to cite
-Mourkas E, Valdebenito JO, Marsh H, Hitchings MD, Cooper KK, Parker CT, Székely T, Johansson H, Ellström P, Pascoe B, Waldenström J, Sheppard SK (2023) **Proximity to humans is associated with antimicrobial resistant enteric pathogens in wild bird microbiomes**.
+Mourkas E, Valdebenito JO, Marsh H, Hitchings MD, Cooper KK, Parker CT, Székely T, Johansson H, Ellström P, Pascoe B, Waldenström J, Sheppard SK (2024) **Proximity to humans is associated with antimicrobial resistant enteric pathogens in wild bird microbiomes**.
 Current Biology. doi: https://doi.org/10.1016/j.cub.2024.07.059
